@@ -1,7 +1,8 @@
 version: 2.1
 
 description: >
-  CircleCI orb to run tests on Momentic.
+  CircleCI orb to run tests on Momentic. Based on the test IDs provided, this
+  orb will trigger runs via webhooks. It does not wait for the runs to complete.
 
 display:
   home_url: "https://momentic.ai/docs"
