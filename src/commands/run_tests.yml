@@ -5,7 +5,7 @@ parameters:
   tests:
     description: List of test IDs to run separated by newlines.
     type: string
-  api-key:
+  api_key:
     description: API key to use for authentication.
     type: env_var_name
     default: MOMENTIC_API_KEY
@@ -14,6 +14,6 @@ steps:
   - run:
       environment:
         PARAM_TESTS: <<parameters.tests>>
-        PARAM_API_KEY: <<parameters.api-key>>
+        PARAM_API_KEY: <<parameters.api_key>>
       name: Run tests
       command: <<include(scripts/run_tests.sh)>>
