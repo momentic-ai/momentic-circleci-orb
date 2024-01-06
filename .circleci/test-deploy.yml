@@ -25,6 +25,8 @@ jobs:
   command-test:
     docker:
       - image: cimg/base:current
+    environment:
+      MOMENTIC_API_KEY: mk-0b587ed4bbb5385d5aef75d833c88318
     steps:
       - checkout
       # Run your orb's commands to validate them.
