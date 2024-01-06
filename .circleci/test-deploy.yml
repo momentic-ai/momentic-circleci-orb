@@ -31,7 +31,10 @@ jobs:
       - momentic-ai/run_tests:
           tests: |
             77875bf4-cc48-4ea0-bbdc-cba7136af2ad
-            c2c2fee4-4778-4bbb-8f0c-31f25f774726
+            c2c2fee4-4778-4bbb-8f0c-
+    environment:
+      MOMENTIC_API_KEY: $MOMENTIC_API_KEY
+
 workflows:
   test-deploy:
     jobs:
