@@ -21,7 +21,7 @@ workflows:
           filters: *filters
       - orb-tools/continue:
           pipeline_number: << pipeline.number >>
-          vcs_type: << pipeline.project.type >>
+          vcs_type: github
           orb_name: momentic-ai
           requires:
             [orb-tools/lint, orb-tools/pack, orb-tools/review, shellcheck/check]
