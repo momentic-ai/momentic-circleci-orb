@@ -3,4 +3,4 @@
 TESTS=$(circleci env subst "${PARAM_TESTS}")
 MOMENTIC_API_KEY=$(circleci env subst "${PARAM_MOMENTIC_API_KEY}")
 
-echo "Running tests: ${TESTS}"
+echo "Running tests: ${TESTS} ${MOMENTIC_API_KEY}"

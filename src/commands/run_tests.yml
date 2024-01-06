@@ -16,4 +16,4 @@ steps:
         PARAM_TESTS: <<parameters.tests>>
         PARAM_API_KEY: <<parameters.api-key>>
       name: Run tests
-      command: <<include(scripts/run-tests.sh)>>
+      command: <<include(scripts/run_tests.sh)>>
