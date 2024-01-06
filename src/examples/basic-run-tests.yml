@@ -1,0 +1,13 @@
+description: >
+  Trigger a single test run in Momentic.
+
+usage:
+  version: 2.1
+  orbs:
+    momentic: momentic-ai/momentic-ai@1
+  workflows:
+    run-single-test:
+      jobs:
+        - momentic-ai/run-tests:
+            tests: |-
+              77875bf4-cc48-4ea0-bbdc-cba7136af2ad
