@@ -15,6 +15,9 @@ done <<< "$TESTS"
 # Remove the trailing comma and close the JSON array
 payload="${payload%,} ] }"
 
+echo "Payload: $payload"
+echo "API key: $API_KEY"
+
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer ${API_KEY}" \
